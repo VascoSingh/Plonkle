@@ -1,12 +1,12 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html, body {
   height: 100%;
 }
-
 
 .App {
   text-align: center;
@@ -29,4 +29,47 @@ nav h1 {
   font-family: Helvetica, Arial, sans-serif;
   color: white;
   font-size: 45px;
+}
+
+.flexbox {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+  max-width: 768px;
+  height: 100vh;
+
+  overflow: hidden;
+
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.flexbox .board {
+  display: flex;
+  justify-content: space-around;
+  width: 100px;
+  height: 100px;
+
+  background-color: rgb(34, 36, 37);
+
+  padding: 15px;
+}
+.flexbox2 .board {
+  display: flex;
+  justify-content: space-around;
+  width: 100px;
+  height: 100px;
+
+  background-color: rgb(64, 99, 116);
+
+  padding: 15px;
+}
+
+.flexbox .board .tile {
+  padding: 15px 15px;
+  background-color: rgb(136, 158, 169);
+
+  cursor: pointer;
+  margin-bottom: 15px;
 }
