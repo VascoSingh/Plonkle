@@ -32,12 +32,6 @@ function App(props) {
             </Tile>
           </Board>
 
-          <Board id="board-3" className="board">
-            <Tile id="tile-3" className="tile" draggable="true">
-              <p>B</p>
-            </Tile>
-          </Board>
-
           <Board id="board-4" className="board">
             <Tile id="tile-4" className="tile" draggable="true">
               <p>B</p>
