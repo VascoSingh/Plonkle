@@ -91,6 +91,40 @@ nav h1 {
   margin-bottom: 0px;
 }
 
+.handflex {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  width: 400px;
+  
+  padding-top: 64px;
+  margin: 0 auto;
+}
+
+.handflex .board {
+  height: 60px;
+  width: 60px;
+  border-style: groove;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  background-color: rgb(0, 0, 0);
+  margin: 1px;
+}
+
+.handflex .board .tile {
+  border-style: outset;
+  padding: 15px 15px;
+  background-color: #A80038;
+  height: 58px;
+  width: 58px;
+  cursor: pointer;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 28px;
+  margin-bottom: 0px;
+}
+
 .gridflex {
   display: flex;
   justify-content: center;
@@ -98,6 +132,7 @@ nav h1 {
 
   width: 600px;
 
+  padding-top: 64px;
   margin: 0 auto;
 }
 
