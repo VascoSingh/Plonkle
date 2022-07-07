@@ -5,6 +5,7 @@ import "./index.css";
 //import { userState } from 'react';
 import Board from "./components/Board";
 import Tile from "./components/Tile";
+import Grid from "./components/Grid"
 
 function App(props) {
   //const [grid, setGrid] = userState('');
@@ -13,7 +14,8 @@ function App(props) {
     //<DndProvider>
       <div className="App">
         <nav><h1>Plonkle</h1></nav>
-        <div className="flexbox">
+        <Grid>tesst</Grid>
+        <div className="row1flex">
           <Board id="board-1" className="board">
             <Tile id="tile-1" className="tile" draggable="true">
               <p>A</p>
@@ -49,7 +51,8 @@ function App(props) {
               <p>B</p>
             </Tile>
           </Board>
-        
+        </div>
+        <div className="row2flex">
           <Board id="board-7" className="board">
             <Tile id="tile-7" className="tile" draggable="true">
               <p>B</p>
@@ -61,7 +64,7 @@ function App(props) {
               <p>B</p>
             </Tile>
           </Board>
-
+        
           <Board id="board-9" className="board">
             <Tile id="tile-9" className="tile" draggable="true">
               <p>B</p>
@@ -85,7 +88,7 @@ function App(props) {
               <p>B</p>
             </Tile>
           </Board>
-          </div>
+        </div>
       </div>
     //</DndProvider>
   );

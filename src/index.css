@@ -31,36 +31,95 @@ nav h1 {
   font-size: 45px;
 }
 
-.flexbox {
+.row1flex {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 
-  width: 100%;
-  max-width: 1600px;
-  height: 160vh;
+  width: 700px;
 
-  
+  margin: 0 auto;
+}
+
+.row1flex .board {
+  height: 100px;
+
+  background-color: #121212;
+
+  padding: 15px;
+}
+
+.row1flex .board .tile {
+  border-style: outset;
+  padding: 15px 15px;
+  background-color: #A80038;
+  height: 55px;
+  width: 55px;
+  cursor: pointer;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 28px;
+  margin-bottom: 0px;
+}
+
+
+.row2flex {
+  display: flex;
+  justify-content: center;
+
+  width: 700px;
 
   margin: 0 auto;
   padding: 15px;
 }
 
-.flexbox .board {
-  flex-direction: row;
-  flex: 1;
-  height: 300px;
+.row2flex .board {
+  height: 100px;
 
-  background-color: rgb(34, 36, 37);
+  background-color: #121212;
 
   padding: 15px;
 }
 
-.flexbox .board .tile {
+.row2flex .board .tile {
   border-style: outset;
   padding: 15px 15px;
-  background-color: darkgoldenrod;
-  height: 50px;
-  width: 50px;
+  background-color: #A80038;
+  height: 55px;
+  width: 55px;
   cursor: pointer;
-  margin-bottom: 15px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 28px;
+  margin-bottom: 0px;
+}
+
+.gridflex {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  width: 600px;
+
+  margin: 0 auto;
+}
+
+.gridflex .board {
+  height: 60px;
+  width: 60px;
+  border-style: groove;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  background-color: rgb(0, 0, 0);
+  margin: 1px;
+}
+
+.gridflex .board .tile {
+  border-style: outset;
+  padding: 15px 15px;
+  background-color: #A80038;
+  height: 58px;
+  width: 58px;
+  cursor: pointer;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 28px;
+  margin-bottom: 0px;
 }
