@@ -4,10 +4,9 @@ function Tile(props) {
 
   const dragStart = e => {
     const target = e.target;
-
     e.dataTransfer.setData('tile_id', target.id);
-    
     setTimeout(() => {
+        e.preventDeafult();
         target.style.display = "none";
     }, 0);
   }

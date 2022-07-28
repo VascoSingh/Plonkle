@@ -1,5 +1,7 @@
 import React from 'react'
 
+//handNum = 12;
+
 function Board(props) {
   const drop = e => {
     e.preventDefault();
@@ -7,11 +9,29 @@ function Board(props) {
 
     const tile = document.getElementById(tile_id);
     tile.style.display = 'block';
-
+    //if(e.target.hasChildNodes() === false && e.target.id.length === 2) {
+    //    window.alert(e.target.id);
+    //}
     e.target.appendChild(tile);
+    
+    //const el = document.getElementById('1');
+
+    //THIS ONE WORKS
+    //window.alert(tile.firstChild.id);
+
+    //THIS IS FOR GRID NUMBER
+    //window.alert(e.target.id);
+
+    //window.alert(grid);
   }
 
   const dragOver = e => {
+    //if(e.target.id.length !== 2) {
+    //    handNum--;
+    //}
+    //if(handNum <= 0) {
+    //    window.alert('none in hand');
+    //}
     e.preventDefault();
   }
   

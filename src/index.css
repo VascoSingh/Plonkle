@@ -10,7 +10,7 @@ html, body {
 
 .App {
   text-align: center;
-  background-color: #121212;
+  background-color: #121212; 
   width: 100vw;
   height: 100vh;
   color: white;
@@ -20,7 +20,7 @@ nav {
   height: 60px;
   width: 100%;
   margin: 0;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid rgb(192, 192, 192);
   place-items: center;
 }
 
@@ -29,66 +29,6 @@ nav h1 {
   font-family: Helvetica, Arial, sans-serif;
   color: white;
   font-size: 45px;
-}
-
-.row1flex {
-  display: flex;
-  justify-content: center;
-
-  width: 700px;
-
-  margin: 0 auto;
-}
-
-.row1flex .board {
-  height: 100px;
-
-  background-color: #121212;
-
-  padding: 15px;
-}
-
-.row1flex .board .tile {
-  border-style: outset;
-  padding: 15px 15px;
-  background-color: #A80038;
-  height: 55px;
-  width: 55px;
-  cursor: pointer;
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 28px;
-  margin-bottom: 0px;
-}
-
-
-.row2flex {
-  display: flex;
-  justify-content: center;
-
-  width: 700px;
-
-  margin: 0 auto;
-  padding: 15px;
-}
-
-.row2flex .board {
-  height: 100px;
-
-  background-color: #121212;
-
-  padding: 15px;
-}
-
-.row2flex .board .tile {
-  border-style: outset;
-  padding: 15px 15px;
-  background-color: #A80038;
-  height: 55px;
-  width: 55px;
-  cursor: pointer;
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 28px;
-  margin-bottom: 0px;
 }
 
 .handflex {
