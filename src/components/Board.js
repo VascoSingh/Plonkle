@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useState } from "react";
 
-//handNum = 12;
+export const grid = Array(9).fill(' ').map(()=>Array(9).fill(' '));
 
 function Board(props) {
+  
   const drop = e => {
     e.preventDefault();
     const tile_id = e.dataTransfer.getData('tile_id');
@@ -13,6 +14,10 @@ function Board(props) {
     //    window.alert(e.target.id);
     //}
     e.target.appendChild(tile);
+
+
+    const gridNum = e.target.id;
+    grid[Math.floor(gridNum/10)][Math.floor(gridNum%10)] = tile.firstChild.id;
     
     //const el = document.getElementById('1');
 
@@ -20,9 +25,10 @@ function Board(props) {
     //window.alert(tile.firstChild.id);
 
     //THIS IS FOR GRID NUMBER
-    //window.alert(e.target.id);
+    window.alert(e.target.id);
+    
 
-    //window.alert(grid);
+    window.alert(grid);
   }
 
   const dragOver = e => {

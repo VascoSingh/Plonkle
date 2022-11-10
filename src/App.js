@@ -6,10 +6,12 @@ import "./index.css";
 //import Tile from "./components/Tile";
 import Grid from "./components/Grid"
 import Hand from "./components/Hand";
+import Board from "./components/Board";
+
 
 function App(props) {
-  const [grid, setGrid] = useState(Array(9).fill(' ').map(()=>Array(9).fill(' ')));
-  grid[1][1] = 'x';
+  //const [grid, setGrid] = useState(Array(9).fill(' ').map(()=>Array(9).fill(' ')));
+  //grid[1][1] = 'x';
   //setGrid(grid);
   //Array(9).fill('x').map(()=>Array(9).fill('x'))
   return (

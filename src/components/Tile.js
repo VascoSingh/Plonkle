@@ -1,10 +1,12 @@
 import React from 'react'
+//import grid from './Board.js'
 
 function Tile(props) {
 
   const dragStart = e => {
     const target = e.target;
     e.dataTransfer.setData('tile_id', target.id);
+    //window.alert(grid);
     setTimeout(() => {
         e.preventDeafult();
         target.style.display = "none";
