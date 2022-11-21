@@ -18,7 +18,8 @@ const useGame = () => {
 
   return {
     grid,
-    placeTile
+    placeTile,
+    moveTile
   }
 
 }

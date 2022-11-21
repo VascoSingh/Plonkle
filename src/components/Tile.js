@@ -7,7 +7,7 @@ function Tile(props) {
     const target = e.target;
     e.dataTransfer.setData('tile_id', target.id);
     // Produces the letter value of the tile
-    // window.alert(e.target.firstChild.id);
+    //window.alert(document.getElementById(target.id).parentNode.id);
 
     setTimeout(() => {
         e.preventDeafult();
