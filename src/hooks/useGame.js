@@ -7,7 +7,13 @@ const useGame = () => {
     const newGrid = [...grid];
     newGrid[x][y] = tile;
     setGrid(newGrid);
-    console.log(newGrid);
+  }
+  
+  const moveTile = (tile, prevx, prevy, x, y) => {
+    const newGrid = [...grid];
+    newGrid[x][y] = tile;
+    newGrid[prevx][prevy] = ' ';
+    setGrid(newGrid);
   }
 
   return {

@@ -6,7 +6,9 @@ function Tile(props) {
   const dragStart = e => {
     const target = e.target;
     e.dataTransfer.setData('tile_id', target.id);
-    //window.alert(grid);
+    // Produces the letter value of the tile
+    // window.alert(e.target.firstChild.id);
+
     setTimeout(() => {
         e.preventDeafult();
         target.style.display = "none";

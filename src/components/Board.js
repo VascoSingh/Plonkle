@@ -7,7 +7,8 @@ function Board(props) {
 
   let {
     grid,
-    placeTile
+    placeTile,
+    moveTile
   } = useGame();
   
   const drop = e => {
@@ -21,8 +22,9 @@ function Board(props) {
     //}
     e.target.appendChild(tile);
     const gridNum = e.target.id;
+    window.alert(gridNum);
     placeTile(tile.firstChild.id, Math.floor(gridNum/10), Math.floor(gridNum%10));
-
+    
   
     //grid[Math.floor(gridNum/10)][Math.floor(gridNum%10)] = tile.firstChild.id;
     
@@ -45,6 +47,7 @@ function Board(props) {
     //if(handNum <= 0) {
     //    window.alert('none in hand');
     //}
+    //window.alert(e.target.id);
     e.preventDefault();
   }
   
