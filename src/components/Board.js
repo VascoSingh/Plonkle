@@ -19,20 +19,20 @@ function Board(props) {
     tile.style.display = 'block';
     e.target.appendChild(tile);
     const gridNum = e.target.id;
-    window.alert(gridNum);
+    //window.alert(gridNum);
     // Logic for moving / placing tiles 
-    window.alert(grid[0]);
-    window.alert(curNum);
+    window.alert(grid[0][0]);
+    //window.alert(curNum);
     if (!isNaN(curNum)) {
       // Edge case for moving tiles back to hand
       // if (isNaN(gridNum)) {
       //   moveTile(' ', Math.floor(curNum / 10), Math.floor(curNum % 10), Math.floor(gridNum / 10), Math.floor(gridNum % 10));
       // } else {
       moveTile(tile.firstChild.id, Math.floor(curNum / 10), Math.floor(curNum % 10), Math.floor(gridNum / 10), Math.floor(gridNum % 10));
-      window.alert("moving...");
+      //window.alert("moving...");
     } else {
       placeTile(tile.firstChild.id, Math.floor(gridNum / 10), Math.floor(gridNum % 10));
-      window.alert("placing...");
+      //window.alert("placing...");
     }
   }
 

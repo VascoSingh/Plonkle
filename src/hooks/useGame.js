@@ -1,7 +1,10 @@
 import React, { useState } from "react";
-const useGame = () => {
 
-  const [grid, setGrid] = useState(Array(9).fill(' ').map(()=>Array(9).fill(' ')));
+//  const [grid, setGrid] = useState(Array(9).fill(' ').map(()=>Array(9).fill(' ')));
+
+
+const useGame = () => {
+  const [grid, setGrid] = useState(() => Array(9).fill(' ').map(()=>Array(9).fill(' ')));
 
   const placeTile = (tile, x, y) => {
     const newGrid = [...grid];

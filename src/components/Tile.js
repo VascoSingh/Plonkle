@@ -10,7 +10,7 @@ function Tile(props) {
     //window.alert(document.getElementById(target.id).parentNode.id);
 
     setTimeout(() => {
-        e.preventDeafult();
+        //e.preventDeafult();
         target.style.display = "none";
     }, 0);
   }

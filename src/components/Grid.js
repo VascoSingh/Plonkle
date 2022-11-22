@@ -3,8 +3,13 @@ import Board from "./Board";
 
 let gridList = [];
 for (let i = 0; i < 81; i++) {
-    gridList.push(<Board id={"" + i%9 + "" + parseInt(i/9)} className="board"></Board>)
-  }
+    gridList.push(
+    <Board 
+    key={i} 
+    id={"" + i%9 + "" + parseInt(i/9)} 
+    className="board"/>
+    )
+  } //choldren list component
 
 function Grid() {
   return (
