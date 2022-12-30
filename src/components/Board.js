@@ -22,6 +22,7 @@ function Board(props) {
     //window.alert(gridNum);
     // Logic for moving / placing tiles 
     window.alert(grid[0][0]);
+    window.alert(curNum);
     //window.alert(curNum);
     if (!isNaN(curNum)) {
       // Edge case for moving tiles back to hand

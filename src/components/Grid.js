@@ -17,6 +17,6 @@ function Grid() {
         {gridList}
     </div>
   )
-}
+} //e.target.value
 
 export default Grid
